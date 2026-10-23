@@ -1,6 +1,20 @@
-# Artificial_Intelligence_CT332
+<div align="center">
 
-Trình trực quan hóa các thuật toán tìm đường trong không gian trạng thái (A*, UCS, Greedy, Hill Climbing) bằng JavaScript thuần — học phần CT332 Trí tuệ nhân tạo.
+# PathFinder: Website trực quan hóa các thuật toán tìm đường trong không gian trạng thái (A*, UCS, Greedy, Hill Climbing)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-1E88E5?style=for-the-badge&logo=github&logoColor=white)](https://huynhthanhphong231004it.github.io/Artificial_Intelligence_CT332/)
+
+
+**CT332 – Trí tuệ nhân tạo - Trường CNTT&TT, Đại học Cần Thơ**
+
+Sinh viên thực hiện: Huỳnh Thanh Phong (MSSV: B2207555)
+Giáo viên hướng dẫn: TS. Lưu Tiến Đạo
+
+[![Facebook](https://img.shields.io/badge/Facebook-Huỳnh%20Thanh%20Phong-E53935?style=for-the-badge&logo=facebook&logoColor=white&labelColor=333333)](https://www.facebook.com/huynh.thanh.phong.561667)
+[![TikTok](https://img.shields.io/badge/TikTok-@reorioll-E53935?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=333333)](https://www.tiktok.com/@reorioll)
+[![YouTube](https://img.shields.io/badge/YouTube-ReoRioll-E53935?style=for-the-badge&logo=youtube&logoColor=white&labelColor=333333)](https://www.youtube.com/@ReoRioll-2304CICTCTU)
+
+
+</div>
 
 ---
 
@@ -10,14 +24,52 @@ Trình trực quan hóa các thuật toán tìm đường trong không gian tr�
 
 ```mermaid
 flowchart LR
-    A[input.txt] --> B[Đồ thị + h]
-    B --> C{Chọn thuật toán}
-    C --> D[A*]
-    C --> E[UCS]
-    C --> F[Greedy]
-    C --> G[Hill Climbing]
-    D & E & F & G --> H[Đường đi + Chi phí + Thứ tự duyệt]
-    D & E & F & G --> I[Bảng Open / Close]
+    %% Định nghĩa phong cách màu sắc chuẩn Academic (Paper-Ready Multi-Color)
+    classDef fileNode fill:#FFFDE7,stroke:#FBC02D,stroke-width:1.5px,color:#F57F17,font-weight:bold;
+    classDef graphNode fill:#E8F5E9,stroke:#2E7D32,stroke-width:1.5px,color:#1B5E20,font-weight:bold;
+    classDef selectNode fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:#E65100,font-weight:bold;
+    
+    %% Màu riêng cho từng thuật toán
+    classDef astarNode fill:#E3F2FD,stroke:#1565C0,stroke-width:1.5px,color:#0D47A1,font-weight:bold;
+    classDef ucsNode fill:#F3E5F5,stroke:#7B1FA2,stroke-width:1.5px,color:#4A148C,font-weight:bold;
+    classDef greedyNode fill:#E0F2F1,stroke:#00695C,stroke-width:1.5px,color:#004D40,font-weight:bold;
+    classDef hcNode fill:#FCE4EC,stroke:#C2185B,stroke-width:1.5px,color:#880E4F,font-weight:bold;
+    
+    %% Kết quả đầu ra
+    classDef pathNode fill:#E8EAF6,stroke:#3F51B5,stroke-width:2px,color:#1A237E,font-weight:bold;
+    classDef tableNode fill:#EFEBE9,stroke:#5D4037,stroke-width:2px,color:#3E2723,font-weight:bold;
+
+    %% Các nút trong sơ đồ
+    A["Tệp dữ liệu đầu vào<br/>input.txt"]:::fileNode
+    B["Biểu diễn Đồ thị<br/>+ Hàm Heuristic h(n)"]:::graphNode
+    C{"Chọn thuật toán<br/>tìm kiếm"}:::selectNode
+
+    D["Thuật toán A*<br/>(A-Star Search)"]:::astarNode
+    E["Thuật toán UCS<br/>(Uniform Cost)"]:::ucsNode
+    F["Thuật toán Greedy<br/>(Best-First Search)"]:::greedyNode
+    G["Hill Climbing<br/>(Leo đồi)"]:::hcNode
+
+    H["Kết quả tìm kiếm:<br/>Đường đi · Chi phí · Thứ tự duyệt"]:::pathNode
+    I["Nhật ký trạng thái:<br/>Bảng Open / Closed"]:::tableNode
+
+    %% Luồng liên kết
+    A --> B
+    B --> C
+
+    C --> D
+    C --> E
+    C --> F
+    C --> G
+
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+
+    D --> I
+    E --> I
+    F --> I
+    G --> I
 ```
 
 | Thành phần | Công nghệ |
