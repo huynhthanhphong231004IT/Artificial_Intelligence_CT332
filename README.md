@@ -190,17 +190,27 @@ B C 4
 </table>
 
 ```mermaid
+%%{init: {
+  "flowchart": {
+    "nodeSpacing": 40,
+    "rankSpacing": 50,
+    "padding": 20
+  },
+  "themeSettings": {
+    "fontFamily": "arial"
+  }
+}}%%
 flowchart LR
-    %% Định nghĩa phong cách màu sắc chuẩn Academic (Paper-Ready Multi-Color)
-    classDef startNode fill:#FFFDE7,stroke:#FBC02D,stroke-width:1.5px,color:#F57F17,font-weight:bold;
-    classDef conditionNode fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:#E65100,font-weight:bold;
-    classDef processNode fill:#E3F2FD,stroke:#1565C0,stroke-width:1.5px,color:#0D47A1,font-weight:bold;
-    classDef updateNode fill:#E8F5E9,stroke:#2E7D32,stroke-width:1.5px,color:#1B5E20,font-weight:bold;
-    classDef logNode fill:#F3E5F5,stroke:#7B1FA2,stroke-width:1.5px,color:#4A148C,font-weight:bold;
-    classDef successNode fill:#E0F2F1,stroke:#00695C,stroke-width:2px,color:#004D40,font-weight:bold;
-    classDef failNode fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#B71C1C,font-weight:bold;
+    %% Định nghĩa phong cách màu sắc chuẩn Academic (Paper-Ready Multi-Color & Chữ lớn)
+    classDef startNode fill:#FFFDE7,stroke:#FBC02D,stroke-width:2px,color:#F57F17,font-weight:bold,font-size:16px;
+    classDef conditionNode fill:#FFF3E0,stroke:#EF6C00,stroke-width:2.5px,color:#E65100,font-weight:bold,font-size:16px;
+    classDef processNode fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1,font-weight:bold,font-size:16px;
+    classDef updateNode fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20,font-weight:bold,font-size:16px;
+    classDef logNode fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#4A148C,font-weight:bold,font-size:16px;
+    classDef successNode fill:#E0F2F1,stroke:#00695C,stroke-width:2.5px,color:#004D40,font-weight:bold,font-size:16px;
+    classDef failNode fill:#FFEBEE,stroke:#C62828,stroke-width:2.5px,color:#B71C1C,font-weight:bold,font-size:16px;
 
-    %% Các nút trong sơ đồ
+    %% Các nút trong sơ đồ (được tăng khoảng cách, chữ to và khung lớn hơn)
     S["Khởi tạo tìm kiếm:<br/>Bắt đầu tại đỉnh Start"]:::startNode
     
     P{"Đã tới<br/>đỉnh End?"}:::conditionNode
@@ -209,12 +219,12 @@ flowchart LR
     Q["Sinh các đỉnh kề<br/>của đỉnh hiện tại"]:::processNode
     
     U["Cập nhật chỉ số:<br/>g(n), f(n) &amp; tập Open"]:::updateNode
-    V["Chuyển trạng thái:<br/>Đưa vào Close &amp; Ghi 1 dòng vào bảng"]:::logNode
+    V["Chuyển trạng thái:<br/>Đưa vào Close &amp; Ghi dòng vào bảng"]:::logNode
     
     W{"Còn đỉnh<br/>trong tập Open?"}:::conditionNode
     X["Kết luận:<br/>Không tìm thấy đường đi!"]:::failNode
 
-    %% Luồng liên kết
+    %% Luồng liên kết ngang
     S --> P
     
     P -- Có --> R
