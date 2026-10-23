@@ -20,7 +20,7 @@ Giáo viên hướng dẫn: TS. Lưu Tiến Đạo
 
 ## 1. Tóm tắt
 
-Ứng dụng web cho phép **nạp đồ thị từ file `.txt` → chọn đỉnh đầu/cuối → chọn thuật toán → xem đường đi, thứ tự duyệt và bảng Open/Close từng bước**.
+Ứng dụng web cho phép nạp đồ thị từ file `.txt` → chọn đỉnh đầu/cuối → chọn thuật toán → xem đường đi, thứ tự duyệt và bảng Open/Close từng bước.
 
 ```mermaid
 flowchart LR
@@ -106,7 +106,7 @@ flowchart LR
 ### 2.1 Luồng xử lý chung
 
 ```mermaid
-flowchart TD
+flowchart LR
     %% Định nghĩa phong cách màu sắc chuẩn Academic (Paper-Ready Multi-Color)
     classDef inputNode fill:#FFFDE7,stroke:#FBC02D,stroke-width:1.5px,color:#F57F17,font-weight:bold;
     classDef parseNode fill:#E3F2FD,stroke:#1565C0,stroke-width:1.5px,color:#0D47A1,font-weight:bold;
