@@ -148,7 +148,7 @@ A B 2                # các dòng sau: "từ đến trọng_số"
 B C 4
 ```
 
-Đồ thị **có hướng**, trọng số cạnh dương, `h` là heuristic của từng đỉnh.
+Đồ thị có hướng, trọng số cạnh dương, `h` là heuristic của từng đỉnh.
 
 ### 2.3 Bốn thuật toán
 
@@ -190,7 +190,7 @@ B C 4
 </table>
 
 ```mermaid
-flowchart TD
+flowchart LR
     %% Định nghĩa phong cách màu sắc chuẩn Academic (Paper-Ready Multi-Color)
     classDef startNode fill:#FFFDE7,stroke:#FBC02D,stroke-width:1.5px,color:#F57F17,font-weight:bold;
     classDef conditionNode fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:#E65100,font-weight:bold;
@@ -239,15 +239,6 @@ flowchart TD
 ├── hillClimbing.js   # Hill Climbing
 └── input*.txt        # đồ thị mẫu
 ```
-
-### 2.5 Chạy thử
-
-```bash
-git clone https://github.com/huynhthanhphong231004IT/Artificial_Intelligence_CT332.git
-# mở index.html bằng trình duyệt → Chọn File (input.txt) → Tải → Tìm đường đi
-```
-
-> **Lưu ý:** `index.html` gọi `ucs.js` và `greedy.js` (chữ thường) trong khi file thực tế là `UCS.js`, `Greedy.js`. Trên Windows/macOS chạy bình thường; trên Linux hoặc GitHub Pages cần đổi tên file hoặc sửa thẻ `<script>` cho khớp.
 
 ---
 
@@ -298,7 +289,7 @@ So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt �
 
 ## 4. Kết luận
 
-- Hoàn thành bộ công cụ trực quan cho **4 thuật toán tìm kiếm** với đầu vào linh hoạt và bảng giải trình từng bước.
-- Phù hợp để **học, kiểm tra bài tập và so sánh** giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
+- Hoàn thành bộ công cụ trực quan cho 4 thuật toán tìm kiếm với đầu vào linh hoạt và bảng giải trình từng bước.
+- Phù hợp để học, kiểm tra bài tập và so sánh giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
 
 **Hướng phát triển:** thêm BFS/DFS, đo số đỉnh mở rộng/thời gian để so sánh định lượng, cho phép chỉnh sửa đồ thị trực tiếp trên giao diện, mở rộng sang điều khiển tác nhân trong môi trường Pacman.
