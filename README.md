@@ -24,6 +24,8 @@ Giáo viên hướng dẫn: TS. Lưu Tiến Đạo
   <br>
 </p>
 
+--- 
+
 ## 1. Tóm tắt
 
 Ứng dụng web cho phép nạp đồ thị từ file `.txt` → chọn đỉnh đầu/cuối → chọn thuật toán → xem đường đi, thứ tự duyệt và bảng Open/Close từng bước.
