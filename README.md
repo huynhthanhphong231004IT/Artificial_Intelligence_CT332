@@ -103,7 +103,7 @@ flowchart LR
 
 ## 2. Phương pháp
 
-### 2.1 Luồng xử lý chung
+\- Luồng xử lý chung: Quy trình bắt đầu bằng việc tải và phân tích tệp dữ liệu đầu vào để trích xuất cấu trúc đỉnh, cạnh cùng giá trị h(n), từ đó hiển thị đồ thị trực quan cho người dùng. Sau khi cấu hình các tham số về điểm đầu, điểm cuối và chọn giải thuật mong muốn, hệ thống sẽ tiến hành thực thi quá trình tìm kiếm. Trong suốt quá trình chạy, từng bước di chuyển được ghi nhận chi tiết vào bảng nhật ký Open/Closed trước khi hiển thị kết quả hoàn chỉnh về đường đi, chi phí và thứ tự duyệt.
 
 ```mermaid
 flowchart LR
@@ -140,7 +140,7 @@ flowchart LR
     G --> H
 ```
 
-### 2.2 Định dạng input
+\- Định dạng input: Định dạng tệp dữ liệu được quy định rõ ràng gồm hai phần chính: dòng đầu tiên dùng để khai báo danh sách tất cả các đỉnh trong đồ thị kèm theo giá trị hàm heuristic h(n) tương ứng (theo cấu trúc tên_đỉnh giá_trị_h), trong khi các dòng tiếp theo dùng để mô tả các cạnh nối giữa các đỉnh cùng với trọng số của từng cạnh (theo cấu trúc từ_đỉnh đến_đỉnh trọng_số).
 
 ```
 A 5 B 3 C 0          # dòng 1: đỉnh và giá trị h  → "đỉnh h đỉnh h ..."
@@ -150,7 +150,7 @@ B C 4
 
 Đồ thị có hướng, trọng số cạnh dương, `h` là heuristic của từng đỉnh.
 
-### 2.3 Bốn thuật toán
+Bốn thuật toán
 
 <table>
   <thead>
@@ -228,7 +228,7 @@ flowchart LR
     W -- Không --> X
 ```
 
-### 2.4 Cấu trúc thư mục
+Cấu trúc thư mục
 
 ```
 ├── index.html        # giao diện + bố cục 3 cột
