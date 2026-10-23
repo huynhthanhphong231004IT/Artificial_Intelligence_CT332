@@ -284,8 +284,9 @@ So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt �
 </table>
 
 
-- Hoàn thành bộ công cụ trực quan cho 4 thuật toán tìm kiếm với đầu vào linh hoạt và bảng giải trình từng bước.
-- Phù hợp để học, kiểm tra bài tập và so sánh giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
+\- Hoàn thành bộ công cụ trực quan cho 4 thuật toán tìm kiếm với đầu vào linh hoạt và bảng giải trình từng bước.
+
+\- Phù hợp để học, kiểm tra bài tập và so sánh giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
 
 **Đóng góp chính:** biến các bước chạy tay trên giấy (bảng Open/Close trong giáo trình) thành kết quả tự động, đối chiếu được ngay với lời giải của bài tập, trên cùng một đồ thị cho cả bốn thuật toán.
 
