@@ -143,8 +143,8 @@ flowchart LR
 \- Định dạng input: Định dạng tệp dữ liệu được quy định rõ ràng gồm hai phần chính: dòng đầu tiên dùng để khai báo danh sách tất cả các đỉnh trong đồ thị kèm theo giá trị hàm heuristic h(n) tương ứng (theo cấu trúc tên_đỉnh giá_trị_h), trong khi các dòng tiếp theo dùng để mô tả các cạnh nối giữa các đỉnh cùng với trọng số của từng cạnh (theo cấu trúc từ_đỉnh đến_đỉnh trọng_số).
 
 ```
-A 5 B 3 C 0          # dòng 1: đỉnh và giá trị h  → "đỉnh h đỉnh h ..."
-A B 2                # các dòng sau: "từ đến trọng_số"
+A 5 B 3 C 0          # dòng 1: đỉnh và giá trị h  → "đỉnh và giá trị h của đỉnh đó"
+A B 2                # các dòng sau: "2 đỉnh và giá trị trọng số"
 B C 4
 ```
 
@@ -283,7 +283,6 @@ So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt �
   </tbody>
 </table>
 
-**Đóng góp chính:** biến các bước chạy tay trên giấy (bảng Open/Close trong giáo trình) thành kết quả tự động, đối chiếu được ngay với lời giải của bài tập, trên cùng một đồ thị cho cả bốn thuật toán.
 
 ---
 
@@ -291,5 +290,7 @@ So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt �
 
 - Hoàn thành bộ công cụ trực quan cho 4 thuật toán tìm kiếm với đầu vào linh hoạt và bảng giải trình từng bước.
 - Phù hợp để học, kiểm tra bài tập và so sánh giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
+
+**Đóng góp chính:** biến các bước chạy tay trên giấy (bảng Open/Close trong giáo trình) thành kết quả tự động, đối chiếu được ngay với lời giải của bài tập, trên cùng một đồ thị cho cả bốn thuật toán.
 
 **Hướng phát triển:** thêm BFS/DFS, đo số đỉnh mở rộng/thời gian để so sánh định lượng, cho phép chỉnh sửa đồ thị trực tiếp trên giao diện, mở rộng sang điều khiển tác nhân trong môi trường Pacman.
