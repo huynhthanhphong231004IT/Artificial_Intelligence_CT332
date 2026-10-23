@@ -7,6 +7,7 @@
 **CT332 – Trí tuệ nhân tạo - Trường CNTT&TT, Đại học Cần Thơ**
 
 Sinh viên thực hiện: Huỳnh Thanh Phong (MSSV: B2207555)
+
 Giáo viên hướng dẫn: TS. Lưu Tiến Đạo
 
 [![Facebook](https://img.shields.io/badge/Facebook-Huỳnh%20Thanh%20Phong-E53935?style=for-the-badge&logo=facebook&logoColor=white&labelColor=333333)](https://www.facebook.com/huynh.thanh.phong.561667)
