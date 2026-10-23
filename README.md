@@ -17,8 +17,6 @@ Giáo viên hướng dẫn: TS. Lưu Tiến Đạo
 
 </div>
 
----
-
 <p align="center">
   <img src="Images/image_01.jpg" width="800">
   <br>
