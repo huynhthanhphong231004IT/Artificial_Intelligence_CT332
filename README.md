@@ -242,7 +242,7 @@ Cấu trúc thư mục
 
 ---
 
-## 3. Đóng góp
+## 3. Đánh giá
 
 So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt ảnh đường đi trên lưới/mê cung, hoặc mã giáo trình chạy console):
 
@@ -283,10 +283,6 @@ So với các công cụ minh họa tìm kiếm thường gặp (chỉ hoạt �
   </tbody>
 </table>
 
-
----
-
-## 4. Kết luận
 
 - Hoàn thành bộ công cụ trực quan cho 4 thuật toán tìm kiếm với đầu vào linh hoạt và bảng giải trình từng bước.
 - Phù hợp để học, kiểm tra bài tập và so sánh giữa tìm kiếm mù (UCS), có thông tin (A\*, Greedy) và cục bộ (Hill Climbing).
